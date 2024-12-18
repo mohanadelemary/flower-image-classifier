@@ -38,10 +38,9 @@ def data_transform_load(data_dir):
                                                                std=[0.229, 0.224, 0.225])])
 
 
-    # Load the datasets with ImageFolder
-
-    train_dataset = datasets.ImageFolder(train_dir, transform=train_transform)
-    valid_dataset = datasets.ImageFolder(valid_dir, transform=valid_transform)
+    # Load the Flowers102 dataset with torchvision
+    train_dataset = datasets.Flowers102(root='path_to_data', split='train', transform=train_transform, download=True)
+    valid_dataset = datasets.Flowers102(root='path_to_data', split='val', transform=valid_transform, download=True)
 
 
     # Using the image datasets and the trainforms, define the dataloaders

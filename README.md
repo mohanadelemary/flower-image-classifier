@@ -6,7 +6,7 @@ This project develops a CLI app with an training and prediction ML pipeline to d
 ### Instructions:
 1. Clone the repository.
 
-2. De-compress flower_data.tar.gz` and install the required dependencies by running the following command in the project's root directory:
+2. Install the required dependencies by running the following command in the project's root directory:
         `pip install -r requirements.txt`
 
 3. Run the following commands in the project's root directory to set up your database and model.
@@ -38,8 +38,6 @@ flower-image-classifier/
 ├── Image_Classifier_Project.ipynb     # Jupyter Notebook with initial code and testing
 ├── README.md                          # ReadMe file with project documentation
 ├── requirements.txt                   # File with all project requirements
-│
-├── Scripts/                           # Directory with all CLI python scripts
-│       ├── data_prep.py               # Python script to process user input and network build up
-│       ├── predict.py                 # Python script to predict flower species of an input image
-│       └── train.py                   # Python script to train and save a custom pre-traing NN
+├── data_prep.py                       # Python script to process user input and network build up
+├── predict.py                         # Python script to predict flower species of an input image
+└── train.py                           # Python script to train and save a custom pre-traing NN
